@@ -2,8 +2,6 @@ apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
 
-apply plugin: 'kotlin-android-extensions'
-
 apply plugin: 'kotlin-kapt'
 
 apply plugin: 'androidx.navigation.safeargs.kotlin'
@@ -12,7 +10,6 @@ android {
     def globalConfiguration = rootProject.extensions.getByName("ext")
 
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
     defaultConfig {
         applicationId "com.chase.kudzie.chasemusic"
         minSdkVersion 21
@@ -27,13 +24,7 @@ android {
 
     buildFeatures {
         dataBinding = true
-        viewBinding = true
-    }
-
-    dexOptions {
-        preDexLibraries = false
-        dexInProcess = false
-        javaMaxHeapSize "4g"
+        viewBinding true
     }
 
     buildTypes {
