@@ -4,7 +4,7 @@ ext {
     androidMinSdkVersion = 21
     androidTargetSdkVersion = 29
     androidCompileSdkVersion = 29
-    kotlinVersion = '1.4.31'
+    kotlinVersion = '1.4.32'
     versionCode = 1
     versionName = "1.0"
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -43,7 +43,9 @@ ext {
     fastScrollerVersion = '1.1.5'
 
     //Compose versions
-    composeVersion = '1.0.0-alpha01'
+    composeVersion = '1.0.0-beta07'
+    composeViewModelVersion = '1.0.0-alpha05'
+    composeActivityVersion = '1.3.0-alpha08'
 
     //Testing Version
     jUnitVersion = '4.12'
@@ -172,15 +174,17 @@ ext {
     ]
 
     composeDependencies = [
-            runtime              : "androidx.compose.runtime:runtime:${composeVersion}",
-            ui                   : "androidx.compose.ui:ui:${composeVersion}",
-            foundation           : "androidx.compose.foundation:foundation:${composeVersion}",
-            foundationLayout     : "androidx.compose.foundation:foundation-layout:${composeVersion}",
-            material             : "androidx.compose.material:material:${composeVersion}",
-            livedata             : "androidx.compose.runtime:runtime-livedata:${composeVersion}",
+            composeUI            : "androidx.compose.ui:ui:${composeVersion}",
             uiTooling            : "androidx.ui:ui-tooling:${composeVersion}",
-            themeAdapter         : "com.google.android.material:compose-theme-adapter:${composeVersion}",
+            runtime              : "androidx.compose.runtime:runtime:${composeVersion}",
+            composeActivities    : "androidx.activity:activity-compose:${composeActivityVersion}",
+            composeViewModels    : "androidx.lifecycle:lifecycle-viewmodel-compose:${composeViewModelVersion}",
+            foundation           : "androidx.compose.foundation:foundation:${composeVersion}",
+            materialDesign       : "androidx.compose.material:material:${composeVersion}",
+            materialIcons        : "androidx.compose.material:material-icons-core:${composeVersion}",
             materialIconsExtended: "androidx.compose.material:material-icons-extended:${composeVersion}",
+            livedata             : "androidx.compose.runtime:runtime-livedata:${composeVersion}",
+            themeAdapter         : "com.google.android.material:compose-theme-adapter:${composeVersion}",
             animation            : "androidx.compose.animation:animation:${composeVersion}"
     ]
 
