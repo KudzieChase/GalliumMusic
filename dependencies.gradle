@@ -4,7 +4,7 @@ ext {
     androidMinSdkVersion = 21
     androidTargetSdkVersion = 29
     androidCompileSdkVersion = 29
-    kotlinVersion = '1.4.32'
+    kotlinVersion = '1.5.10'
     versionCode = 1
     versionName = "1.0"
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -36,14 +36,14 @@ ext {
     mediaVersion = '1.1.0'
     lifecycleVersion = '2.2.0'
     roomVersion = '2.2.5'
-    moshiVersion = '1.9.3'
+    moshiVersion = '1.12.0'
     dataStoreVersion = '1.0.0-alpha05'
     livedataktxVersion = '2.2.0'
     cascadeVersion = '1.2.0'
     fastScrollerVersion = '1.1.5'
 
     //Compose versions
-    composeVersion = '1.0.0-beta07'
+    composeVersion = '1.0.0-beta08'
     composeViewModelVersion = '1.0.0-alpha05'
     composeActivityVersion = '1.3.0-alpha08'
 
