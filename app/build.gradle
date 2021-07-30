@@ -99,7 +99,7 @@ dependencies {
     implementation composeDependencies.materialIconsExtended
     implementation composeDependencies.livedata
     implementation composeDependencies.animation
-    implementation composeDependencies.animation
+    implementation composeDependencies.accompanistGlide
 
     //Data store
     implementation appDependencies.dataStorePrefs

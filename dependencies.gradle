@@ -46,6 +46,8 @@ ext {
     composeVersion = '1.0.0'
     composeViewModelVersion = '1.0.0-alpha07'
     composeActivityVersion = '1.3.0-rc02'
+    accompanistVersion = '0.15.0'
+
 
     //Testing Version
     jUnitVersion = '4.12'
@@ -185,7 +187,8 @@ ext {
             materialIconsExtended: "androidx.compose.material:material-icons-extended:${composeVersion}",
             livedata             : "androidx.compose.runtime:runtime-livedata:${composeVersion}",
             themeAdapter         : "com.google.android.material:compose-theme-adapter:${composeVersion}",
-            animation            : "androidx.compose.animation:animation:${composeVersion}"
+            animation            : "androidx.compose.animation:animation:${composeVersion}",
+            accompanistGlide     : "com.google.accompanist:accompanist-glide:${accompanistVersion}"
     ]
 
     appTestDependencies = [
