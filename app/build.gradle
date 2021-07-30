@@ -46,7 +46,7 @@ android {
 
     composeOptions {
         kotlinCompilerVersion "1.5.10"
-        kotlinCompilerExtensionVersion "1.0.0-beta08"
+        kotlinCompilerExtensionVersion "1.0.0"
     }
 }
 
@@ -91,6 +91,15 @@ dependencies {
     implementation appDependencies.androidxActivity
 
     implementation composeDependencies.runtime
+    implementation composeDependencies.composeUI
+    implementation composeDependencies.foundation
+    implementation composeDependencies.uiTooling
+    implementation composeDependencies.materialDesign
+    implementation composeDependencies.materialIcons
+    implementation composeDependencies.materialIconsExtended
+    implementation composeDependencies.livedata
+    implementation composeDependencies.animation
+    implementation composeDependencies.animation
 
     //Data store
     implementation appDependencies.dataStorePrefs
