@@ -1,2 +1,2 @@
 include ':app', ':domain', ':data', ':service-music', ':shared'
-rootProject.name='ChaseMusicX'
+rootProject.name='GalliumMusic'
